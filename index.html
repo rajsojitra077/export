@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shrijaa International | Import & Export</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins', sans-serif;
+    scroll-behavior:smooth;
+}
+
+body{
+    line-height:1.6;
+    color:#333;
+}
+
+/* Header */
+header{
+    background:#0d1b2a;
+    color:#fff;
+    padding:15px 0;
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+/* Logo */
+.logo-text{
+    display:flex;
+    flex-direction:column;
+    line-height:1;
+}
+
+.logo-main{
+    font-size:22px;
+    font-weight:700;
+    color:#ffffff;
+    letter-spacing:1px;
+}
+
+.logo-sub{
+    font-size:14px;
+    font-weight:400;
+    color:#00b4d8;
+    letter-spacing:2px;
+    text-transform:uppercase;
+}
+
+nav ul{
+    list-style:none;
+    display:flex;
+}
+
+nav ul li{
+    margin-left:20px;
+}
+
+nav ul li a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:500;
+}
+
+nav ul li a:hover{
+    color:#00b4d8;
+}
+
+/* Hero Section */
+.hero{
+    background:linear-gradient(rgba(13,27,42,0.85),rgba(13,27,42,0.85)),
+    url('https://images.pexels.com/photos/906494/pexels-photo-906494.jpeg?auto=compress&cs=tinysrgb&w=1600') no-repeat center center/cover;
+    color:#fff;
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    padding:0 20px;
+}
+
+.hero h1{
+    font-size:48px;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:20px;
+}
+
+.btn{
+    display:inline-block;
+    padding:12px 30px;
+    background:#00b4d8;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    transition:0.3s;
+    border:none;
+    cursor:pointer;
+}
+
+.btn:hover{
+    background:#0096c7;
+}
+
+/* Sections */
+section{
+    padding:80px 0;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:40px;
+    font-size:32px;
+    color:#0d1b2a;
+}
+
+.about, .services, .contact{
+    background:#f8f9fa;
+}
+
+/* Grid */
+.grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+    gap:30px;
+}
+
+/* Premium Product Cards */
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    text-align:center;
+    transition:all 0.4s ease;
+    cursor:pointer;
+}
+
+.card:hover{
+    transform:translateY(-12px);
+    box-shadow:0 15px 35px rgba(0,0,0,0.25);
+}
+
+.card img{
+    width:100%;
+    height:200px;
+    object-fit:cover;
+    transition:transform 0.5s ease;
+}
+
+.card:hover img{
+    transform:scale(1.08);
+}
+
+.card h3{
+    margin:15px 0;
+    color:#0d1b2a;
+}
+
+.card p{
+    padding:0 15px 20px;
+}
+
+/* Contact */
+.contact form{
+    max-width:600px;
+    margin:auto;
+}
+
+.contact input, .contact textarea{
+    width:100%;
+    padding:12px;
+    margin-bottom:15px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+/* Footer */
+footer{
+    background:#0d1b2a;
+    color:#fff;
+    text-align:center;
+    padding:20px 0;
+}
+
+/* WhatsApp */
+.whatsapp-btn{
+    position:fixed;
+    bottom:20px;
+    right:20px;
+    background:#25D366;
+    color:#fff;
+    font-size:22px;
+    padding:15px 18px;
+    border-radius:50%;
+    text-decoration:none;
+    box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+.whatsapp-btn:hover{
+    background:#1ebe5d;
+}
+
+@media(max-width:768px){
+    .hero h1{
+        font-size:32px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="container">
+<nav>
+<div class="logo-text">
+<span class="logo-main">Shrijaa</span>
+<span class="logo-sub">International</span>
+</div>
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#services">Products</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+</div>
+</header>
+
+<section class="hero" id="home">
+<div>
+<h1>Global Import & Export Solutions</h1>
+<p>Delivering Quality Products Across International Markets</p>
+<a href="#contact" class="btn">Get In Touch</a>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="container">
+<h2 class="section-title">About Us</h2>
+<p style="text-align:center; max-width:800px; margin:auto;">
+Shrijaa International is a trusted import-export company delivering high-quality agricultural, industrial and consumer products worldwide.
+</p>
+</div>
+</section>
+
+<section class="services" id="services">
+<div class="container">
+<h2 class="section-title">Our Products</h2>
+<div class="grid">
+
+<div class="card">
+<img src="https://images.pexels.com/photos/1459339/pexels-photo-1459339.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Agricultural Products</h3>
+<p>Premium grains, spices, pulses and fresh produce for global markets.</p>
+</div>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/256381/pexels-photo-256381.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Industrial Goods</h3>
+<p>High-quality raw materials and machinery for international industries.</p>
+</div>
+
+<div class="card">
+<img src="https://images.pexels.com/photos/163726/belgium-antwerp-shipping-container-163726.jpeg?auto=compress&cs=tinysrgb&w=800">
+<h3>Export Logistics</h3>
+<p>Efficient worldwide shipping and logistics solutions.</p>
+</div>
+
+</div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="container">
+<h2 class="section-title">Contact Us</h2>
+
+<form action="https://formsubmit.co/info@shrijaainternational.com" method="POST">
+<input type="text" name="name" placeholder="Your Name" required>
+<input type="tel" name="phone" placeholder="Your Phone Number" required>
+<input type="email" name="email" placeholder="Your Email" required>
+<textarea name="message" rows="5" placeholder="Your Message" required></textarea>
+
+<input type="hidden" name="_captcha" value="false">
+<input type="hidden" name="_subject" value="New Enquiry from Website">
+<input type="hidden" name="_template" value="table">
+
+<button type="submit" class="btn">Send Enquiry</button>
+</form>
+
+<div style="text-align:center; margin-top:30px;">
+<p><strong>Address:</strong> 123 Trade Avenue, Business District, Mumbai, India</p>
+<p><strong>Phone:</strong> +91 98765 43210</p>
+<p><strong>Email:</strong> info@shrijaainternational.com</p>
+</div>
+
+</div>
+</section>
+
+<footer>
+<p>© 2026 Shrijaa International. All Rights Reserved.</p>
+</footer>
+
+<a href="https://wa.me/919876543210" class="whatsapp-btn" target="_blank">💬</a>
+
+</body>
+</html>
